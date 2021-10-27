@@ -1,0 +1,12 @@
+#instructions {
+  display: flex;
+  justify-content: center;
+  margin-left: 950px;
+  border: 1px solid black;
+  background: white;
+  height: 725px;
+  width: 22%;
+  top: 0;
+  overflow: hidden;
+  position: fixed;
+}

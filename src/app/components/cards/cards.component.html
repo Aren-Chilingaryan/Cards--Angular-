@@ -1,0 +1,8 @@
+<div class="card" *ngFor="let card of cards">
+  <app-button
+    id="icon"
+    text="X"
+    (btnClick)="handleDelete(card.id)"
+  ></app-button>
+  <p class="innernumber">{{ card.innerNumber }}</p>
+</div>
