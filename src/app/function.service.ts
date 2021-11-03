@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Card } from './Card';
-import { CARDS } from './mock-cards';
 
 @Injectable({
   providedIn: 'root',
@@ -27,7 +26,7 @@ export class FunctionService {
     for (let i = 0; i < array.length; i++) {
       for (let j = 0; j < array.length - 1; j++) {
         if (array[j].innerNumber > array[j + 1].innerNumber) {
-          let x = array[j];
+          const x = array[j];
           array[j] = array[j + 1];
           array[j + 1] = x;
         }
@@ -35,5 +34,4 @@ export class FunctionService {
     }
   }
 
-  constructor() {}
 }

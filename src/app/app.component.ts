@@ -36,10 +36,4 @@ export class AppComponent implements OnInit {
   addCard() {
     this.cards.push(this.createCard());
   }
-
-  draw() {
-    for (let i = 0; i < this.cards.length; i++) {
-      this.cards.push(this.cards[i]);
-    }
-  }
 }
