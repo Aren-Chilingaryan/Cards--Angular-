@@ -1,10 +1,10 @@
 #instructions {
   display: flex;
   justify-content: center;
-  margin-left: 950px;
+  margin-left: 78%;
   border: 1px solid black;
   background: white;
-  height: 725px;
+  height: 100%;
   width: 22%;
   top: 0;
   overflow: hidden;

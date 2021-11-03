@@ -8,9 +8,6 @@ import { CARDS } from '../../mock-cards';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-  @Input() id: string = '';
-  @Input() innerNumber: number = 0;
-  @Input() cards: Card[] = CARDS;
   @Output() addCard: EventEmitter<any> = new EventEmitter<any>();
   @Output() sortCard: EventEmitter<any> = new EventEmitter<any>();
 

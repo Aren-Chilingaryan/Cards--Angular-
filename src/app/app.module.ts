@@ -8,6 +8,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { InstructionsComponent } from './components/instructions/instructions.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { FunctionService } from './function.service';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { CardsComponent } from './components/cards/cards.component';
     CardsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [FunctionService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

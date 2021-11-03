@@ -1,10 +1,4 @@
-<app-header
-  [cards]="cards"
-  (addCard)="addCard()"
-  (sortCard)="sortCard()"
-></app-header>
-<div id="scroll">
-  <app-cards [cards]="cards" (deleteCard)="deleteCard($event)"></app-cards>
-</div>
+<app-header (addCard)="addCard()" (sortCard)="sortCard()"></app-header>
+<app-cards [cards]="cards" (deleteCard)="deleteCard($event)"></app-cards>
 <app-footer></app-footer>
 <app-instructions></app-instructions>
